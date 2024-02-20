@@ -1,0 +1,23 @@
+CONTRIBUTING.md
+LICENSE
+NOTICE
+README.md
+Snippets.md
+Solutions
+dir1
+dir2
+dir3
+lorem.txt
+test.txt
+total 68
+-rw-rw-rw-  1 codespace codespace    97 Feb 20 07:00 test.txt
+-rw-rw-rw-  1 codespace root        635 Feb 20 05:48 CONTRIBUTING.md
+-rw-rw-rw-  1 codespace root       6648 Feb 20 05:48 LICENSE
+-rw-rw-rw-  1 codespace root        617 Feb 20 05:48 NOTICE
+-rw-rw-rw-  1 codespace root       1671 Feb 20 05:48 README.md
+-rw-rw-rw-  1 codespace root      11106 Feb 20 05:48 Snippets.md
+drwxrwxrwx+ 2 codespace root       4096 Feb 20 05:48 Solutions
+drwxrwxrwx+ 2 codespace root       4096 Feb 20 05:48 dir1
+drwxrwxrwx+ 2 codespace root       4096 Feb 20 05:48 dir2
+drwxrwxrwx+ 2 codespace root       4096 Feb 20 05:48 dir3
+-rw-rw-rw-  1 codespace root      12577 Feb 20 05:48 lorem.txt
