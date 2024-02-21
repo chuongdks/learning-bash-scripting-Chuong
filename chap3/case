@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+animal="dog"
+case $animal in
+    # Test condition comes before a right parenthesis to indicate the end of the test. 
+    # Followed up by whatever action
+    # And two semicolons to tell bash that you're done with this condition, 
+    bird) echo "Avian";; 
+
+    # '|' is OR
+    dog|puppy) echo "Canine";;
+
+    # Default case, no need to put ";;"
+    *) echo "No match!"
+esac
