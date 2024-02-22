@@ -7,3 +7,55 @@ greet()
 
 echo "And now, a greeting..."
 greet
+
+greet() {
+    echo "Hi there, $1" # variable $1 represents first argument
+}
+
+echo "And now, a greeting..."
+greet Scott
+
+
+
+#!/usr/bin/env bash
+
+greet() {
+    echo "Hi there, $1. What a nice $2" # variable $2 represents 2nd argument
+}
+
+echo "And now, a greeting..."
+greet Scott Morning
+greet Everybody Evening
+
+
+
+#!/usr/bin/env bash
+
+numberthing() {
+    declare -i i=1
+    for f in $@; do
+        echo "$i: $f"
+        (( i += 1 ))
+    done
+    echo "This counting was brought to you by $FUNCNAME." #$FUNCNAME is function name!! Duh
+}
+
+numberthing "$(ls /)" # or use: /* to represent all files in directory
+echo
+numberthing pine birch maple spruce
+
+
+
+#!/usr/bin/env bash
+
+var1="I'm variable 1"
+
+myfunction() {
+    var2="I'm variable 2"
+    local var3="I'm variable 3" # variable 3 wont print cuz it's outside of scope
+}
+myfunction
+
+echo $var1
+echo $var2
+echo $var3

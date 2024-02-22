@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+for i in 1 2 3 4 5
+do
+    echo "This is line $i" >> textfile.txt # ~/textfile.txt to create file in home directory
+done
+
+# #!/usr/bin/env bash
+
+# while read f
+#     do echo "I read a line an it says: $f"
+# done < ~/textfile.txt
+
+
