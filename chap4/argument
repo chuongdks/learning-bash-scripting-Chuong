@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+echo "The $0 script got the argument $1"
+echo "Argument 2 is $2"
+
+#!/usr/bin/env bash
+
+for i in $@
+do
+    echo $i
+done
+
+#!/usr/bin/env bash
+
+for i in "$@" # Add Quote to make sure the args can use space in it
+do
+    echo $i
+done
+
+echo "There were $# arguments." # count how many args using $#, similar to argc

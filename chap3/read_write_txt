@@ -5,10 +5,10 @@ do
     echo "This is line $i" >> textfile.txt # ~/textfile.txt to create file in home directory
 done
 
-# #!/usr/bin/env bash
+#!/usr/bin/env bash
 
-# while read f
-#     do echo "I read a line an it says: $f"
-# done < ~/textfile.txt
+while read f
+    do echo "I read a line an it says: $f"
+done < textfile.txt # ~/textfile.txt to read the txt file in home directory
 
 
